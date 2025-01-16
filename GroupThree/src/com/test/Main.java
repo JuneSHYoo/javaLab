@@ -69,7 +69,7 @@ public class Main {
 					//fiveSun.mostViewedBooks(scanner);
 					break;
 				case 5:
-					//hyungSuh.mostViewedBooks(scanner);
+					hyungSuh.start(scanner);
 					break;
 				case 6:
 					//shy.mostViewedBooks(scanner);
