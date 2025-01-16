@@ -1,4 +1,4 @@
-package hyungSuh;
+package com.test.hyungSuh;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

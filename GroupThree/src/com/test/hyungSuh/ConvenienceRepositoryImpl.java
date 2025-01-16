@@ -1,4 +1,4 @@
-package hyungSuh;
+package com.test.hyungSuh;
 
 import java.util.*;
 
