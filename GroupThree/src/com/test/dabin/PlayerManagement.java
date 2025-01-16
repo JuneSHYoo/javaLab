@@ -11,7 +11,7 @@ public class PlayerManagement {
         addPlayerDirectly("LG트윈스", new Player("박해민", "LG트윈스", "MF", 17));
         addPlayerDirectly("LG트윈스", new Player("문성주", "LG트윈스", "LF", 8));
         addPlayerDirectly("LG트윈스", new Player("김현수", "LG트윈스", "LF", 22));
-        addPlayerDirectly("LG트윈스", new Player("문보경", "LG트윈스", "LF", 2));
+        addPlayerDirectly("LG트윈스", new Player("문보경", "LG트윈스", "3B", 2));
         addPlayerDirectly("LG트윈스", new Player("신민재", "LG트윈스", "2B", 4));
         addPlayerDirectly("LG트윈스", new Player("구본혁", "LG트윈스", "2B", 6));
         addPlayerDirectly("LG트윈스", new Player("이영빈", "LG트윈스", "SS", 7));
