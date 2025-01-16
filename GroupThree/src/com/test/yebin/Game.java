@@ -10,17 +10,82 @@ public class Game {
     public static int score = 0;
 
     private static void printBoard() {
-        System.out.println("┌──────────────────────────┐");
-        System.out.printf("│ Score: %5d             │\n", score);
+        System.out.println("\u001B[0m┌──────────────────────────────┐\u001B[0m");
+        System.out.printf("\u001B[0m│ Score: %5d                 │\u001B[0m\n", score);
         for (int row = 0; row < 4; row++) {
-            System.out.print("│ ");
+            System.out.print("\u001B[0m│ \u001B[0m");
             for (int col = 0; col < 4; col++) {
-                System.out.printf("%5d ", board[row][col]);
+                if (board[row][col] == 0)
+                    System.out.print("       ");
+                else
+                    System.out.print(makeColor(board[row][col], "┌─────┐"));
             }
-            System.out.println(" │");
+            System.out.println("\u001B[0m │\u001B[0m");
+            System.out.print("\u001B[0m│ \u001B[0m");
+            for (int col = 0; col < 4; col++) {
+                if (board[row][col] == 0)
+                    System.out.print("       ");
+                else
+                    System.out.printf(makeColor(board[row][col], "│%5d│"), board[row][col]);
+            }
+            System.out.println("\u001B[0m │\u001B[0m");
+            System.out.print("\u001B[0m│ \u001B[0m");
+            for (int col = 0; col < 4; col++) {
+                if (board[row][col] == 0)
+                    System.out.print("       ");
+                else
+                    System.out.print(makeColor(board[row][col], "└─────┘"));
+            }
+            System.out.println("\u001B[0m │\u001B[0m");
         }
-        System.out.println("└──────────────────────────┘");
+        System.out.println("\u001B[0m└──────────────────────────────┘\u001B[0m");
     }
+
+    private static String makeColor(int i, String str) {
+        if (i == 2) {
+            return "\u001B[31m" + str + "\u001B[31m";
+        }
+        else if (i == 4) {
+            return "\u001B[33m" + str + "\u001B[33m";
+        }
+        else if (i == 8) {
+            return "\u001B[32m" + str + "\u001B[32m";
+        }
+        else if (i == 16) {
+            return "\u001B[36m" + str + "\u001B[36m";
+        }
+        else if (i == 32) {
+            return "\u001B[34m" + str + "\u001B[34m";
+        }
+        else if (i == 64) {
+            return "\u001B[35m" + str + "\u001B[35m";
+        }
+        else if (i == 128) {
+            return "\u001B[37m" + str + "\u001B[37m";
+        }
+        else if (i == 256) {
+            return "\u001B[31m" + str + "\u001B[31m";
+        }
+        else if (i == 512) {
+            return "\u001B[33m" + str + "\u001B[33m";
+        }
+        else if (i == 1024) {
+            return "\u001B[32m" + str + "\u001B[32m";
+        }
+        else if (i == 2048) {
+            return "\u001B[36m" + str + "\u001B[36m";
+        }
+        else if (i == 4096) {
+            return "\u001B[34m" + str + "\u001B[34m";
+        }
+        else if (i == 8192) {
+            return "\u001B[35m" + str + "\u001B[35m";
+        }
+        else {
+            return "\u001B[37m" + str + "\u001B[37m";
+        }
+    }
+
 
     public static void gameStart() {
         for (int row = 0; row < 4; row++) {
