@@ -1,6 +1,9 @@
 # LG CNS AM CAMP 1기 - 3조 프로젝트 안내  
 **기간**: 2025.01.16 ~ 2025.01.17 1:00PM 제출
 
+### 실행 방법
+(완성 후 release에 배포한 다음 작성 예정)
+
 ### 팀원 목록
 - **신예빈** - 2048
 - **심수연** - Diary
@@ -44,7 +47,7 @@
   예시: [hanjin 패키지](https://github.com/lg-cns-am-1-group3/javaLab/tree/main/GroupThree/src/com/test/hanjin)
 
 - **본인 코드 내 패키지명 수정**:  
-  패키지 경로 확인 후 수정해 주세요.
+  패키지 경로 확인 후 수정해 주세요.  
   예시: package com.test.hanjin;
 
 ---
