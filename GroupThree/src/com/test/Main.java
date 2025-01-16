@@ -83,7 +83,7 @@ public class Main {
 					dabin.run();
 					break;
 				case 10:
-					//sangHoon.mostViewedBooks(scanner);
+			        sangHoon.movieManagerApp(scanner);
 					break;
 				case 11:
 					//minyeong.mostViewedBooks(scanner);
