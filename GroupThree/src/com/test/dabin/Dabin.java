@@ -1,6 +1,4 @@
-다빈 클래스
-
-        package com.test.dabin;
+package com.test.dabin;
 
 import java.util.Scanner;
 
