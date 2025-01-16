@@ -51,10 +51,12 @@ public class Main {
 		
 		try {
 			while(true) {
+				fiveSun.start(scanner);
+				/*
 				printMenu();
 				choice = scanner.nextInt();
 				scanner.nextLine();
-				/*
+
 				switch(choice) {
 				case 1:
 					yebin.mostViewedBooks(scanner);
