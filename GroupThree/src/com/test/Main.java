@@ -54,10 +54,10 @@ public class Main {
 				printMenu();
 				choice = scanner.nextInt();
 				scanner.nextLine();
-				/*
+
 				switch(choice) {
 				case 1:
-					yebin.mostViewedBooks(scanner);
+					yebin.start();
 					break;
 				case 2:
 					suyeon.mostViewedBooks(scanner);				
@@ -97,7 +97,7 @@ public class Main {
 					
 				}
 				
-				*/
+
 			}
 			
 			
