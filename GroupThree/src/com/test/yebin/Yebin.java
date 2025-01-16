@@ -1,6 +1,8 @@
+package com.test.yebin;
 import java.util.Scanner;
 
 public class Yebin {
+
 
     public static void printMenu(String name) {
         System.out.println("┌───────────────────────┐");
@@ -20,12 +22,10 @@ public class Yebin {
 
     }
 
-    public void start() {
+    public void start(Scanner scanner) {
         Game game = new Game();
         ScoreManager scoreManager = new ScoreManager();
         String name;
-        Scanner scanner = new Scanner(System.in);
-
 
         getName();
         name = scanner.nextLine();
@@ -59,7 +59,7 @@ public class Yebin {
                     break;
                 case 0:
                     System.out.println("게임을 종료합니다.");
-                    scanner.close();
+
                     return;
             }
         }
