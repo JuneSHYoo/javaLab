@@ -1,3 +1,5 @@
+package com.test.yebin;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
