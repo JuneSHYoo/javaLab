@@ -80,7 +80,7 @@ public class Main {
 					//dain.mostViewedBooks(scanner);
 					break;
 				case 9:
-					//dabin.mostViewedBooks(scanner);
+					dabin.run();
 					break;
 				case 10:
 					//sangHoon.mostViewedBooks(scanner);
