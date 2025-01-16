@@ -60,7 +60,7 @@ public class Main {
 					//yebin.mostViewedBooks(scanner);
 					break;
 				case 2:
-					//suyeon.mostViewedBooks(scanner);				
+					suyeon.diaryApp(scanner);				
 					break;
 				case 3:
 					hanjin.tamagotchiApp(scanner);
