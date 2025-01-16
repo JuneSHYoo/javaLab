@@ -56,7 +56,7 @@ public class Main {
 				scanner.nextLine();
 				switch(choice) {
 				case 1:
-					yebin.start();
+					yebin.start(scanner);
 					break;
 				case 2:
 					suyeon.diaryApp(scanner);				
