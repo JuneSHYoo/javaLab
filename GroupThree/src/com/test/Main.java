@@ -54,10 +54,9 @@ public class Main {
 				printMenu();
 				choice = scanner.nextInt();
 				scanner.nextLine();
-				
 				switch(choice) {
 				case 1:
-					//yebin.mostViewedBooks(scanner);
+					yebin.start();
 					break;
 				case 2:
 					suyeon.diaryApp(scanner);				
@@ -96,8 +95,6 @@ public class Main {
 					System.out.println("잘못된 입력입니다.");
 					
 				}
-				
-				
 			}
 			
 			
