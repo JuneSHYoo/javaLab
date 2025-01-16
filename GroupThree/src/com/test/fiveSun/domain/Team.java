@@ -14,7 +14,6 @@ public class Team {
     private int championshipWins;       // 우승 횟수
     private String coach;               // 감독 이름
     private Map<Long, Player> players;  // 선수 목록
-    private List<Comment> comments;     // 응원 댓글 목록
 
     public Team(String name, LocalDate foundationDate, String homeCity, String homeStadium, int championshipWins, String coach) {
         this.name = name;
@@ -24,7 +23,6 @@ public class Team {
         this.championshipWins = championshipWins;
         this.coach = coach;
         this.players = new HashMap<>();
-        this.comments = new ArrayList<>();
     }
 
     public String getName() {
@@ -55,7 +53,4 @@ public class Team {
         return players;
     }
 
-    public List<Comment> getComments() {
-        return comments;
-    }
 }
