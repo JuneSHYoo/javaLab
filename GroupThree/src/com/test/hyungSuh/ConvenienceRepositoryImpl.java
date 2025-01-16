@@ -47,14 +47,14 @@ public class ConvenienceRepositoryImpl implements ConvenienceRepository {
     public List<Product> findByName(String name) {
         return products.stream()
                 .filter(product -> product.getName().toLowerCase().contains(name.trim().toLowerCase()))
-                .toList();
+                .collect(Collectors.toList());
     }
 
     @Override
     public List<Product> findByType(Type type) {
         return products.stream()
                 .filter(product -> product.getType().equals(type))
-                .toList();
+                .collect(Collectors.toList());
     }
 
     @Override
