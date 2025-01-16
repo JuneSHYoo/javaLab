@@ -105,7 +105,7 @@ public class Game {
 
         while (true) {
             printBoard();
-            System.out.print("움직일 방향을 입력하세요 ( L R U D ): ");
+            System.out.print("움직일 방향을 입력하세요 ( L R U D ) [ exit: 종료 ]: ");
             input = scanner.nextLine();
 
             switch (input.trim().toLowerCase()) {
