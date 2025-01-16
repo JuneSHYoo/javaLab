@@ -43,6 +43,10 @@
   본인이 작성한 코드는 본인 이름 패키지(`com.test.000`) 내에 추가해 주세요.  
   예시: [hanjin 패키지](https://github.com/lg-cns-am-1-group3/javaLab/tree/main/GroupThree/src/com/test/hanjin)
 
+- **본인 코드 내 패키지명 수정**:  
+  패키지 경로 확인 후 수정해 주세요.
+  예시: package com.test.hanjin;
+
 ---
 
 ## 4. 프로젝트 수정 시 유의사항
