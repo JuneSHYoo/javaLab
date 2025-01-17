@@ -8,7 +8,8 @@
 ## 실행 방법
 
 1. **jar 파일 다운로드**
-2. **cmd에서 실행**
+   [releases](https://github.com/lg-cns-am-1-group3/javaLab/tags)
+3. **cmd에서 실행**
    ```bash
    cd <jar 파일 위치>
    java -jar JAVA_Group3.jar
