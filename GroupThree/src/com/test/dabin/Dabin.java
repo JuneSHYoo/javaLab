@@ -1,5 +1,7 @@
 package com.test.dabin;
 
+import java.util.Scanner;
+
 public class Dabin {
     public static void printMenu() {
         System.out.println("\n ⚾️🏟️선수 관리 프로그램 🏟️⚾️ ");
@@ -11,10 +13,10 @@ public class Dabin {
         System.out.println("5. 종료");
         System.out.print("메뉴를 선택하세요: ");
     }
-    public void run() {
+    public void run(Scanner scanner) {
         PlayerManagement pm = new PlayerManagement();
         pm.initializePlayers();
-        Scanner scanner = new Scanner(System.in);
+
 
         while (true) {
             printMenu();
