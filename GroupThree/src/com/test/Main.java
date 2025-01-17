@@ -75,7 +75,7 @@ public class Main {
 					shy.printExerciseMenu(scanner);
 					break;
 				case 7:
-					//yeongSeo.mostViewedBooks(scanner);
+					yeongSeo.start(scanner); 
 					break;
 				case 8:
 					//dain.mostViewedBooks(scanner);
