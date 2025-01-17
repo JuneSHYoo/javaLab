@@ -81,7 +81,7 @@ public class Main {
 					//dain.mostViewedBooks(scanner);
 					break;
 				case 9:
-					dabin.run();
+					dabin.run(scanner);
 					break;
 				case 10:
 			        sangHoon.movieManagerApp(scanner);
