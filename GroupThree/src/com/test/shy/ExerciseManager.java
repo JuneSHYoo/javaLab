@@ -1,6 +1,11 @@
 package com.test.shy;
 
-import java.util.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
 
 public class ExerciseManager {
     private List<Exercise> exercises = new ArrayList<>();
@@ -16,6 +21,24 @@ public class ExerciseManager {
         exercises.add(new Exercise("수영", 40, 350, "2025-01-16"));
         exercises.add(new Exercise("프리웨이트", 50, 500, "2025-01-15"));
     }
+    
+    public String isValidDate(String date, Scanner scanner) {
+        // 날짜 형식을 지정합니다.
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        dateFormat.setLenient(false); // 엄격한 형식 검사를 설정합니다.
+        
+        try {
+            // 날짜를 파싱하여 유효성을 검사합니다.
+            dateFormat.parse(date);
+            return date; // 형식이 올바르면 true 반환
+        } catch (ParseException e) {
+        	
+        	System.out.println("날짜 형식이 올바르지 않습니다. 다시 입력해주세요. (YYYY-MM-DD):");
+        	date = scanner.nextLine();
+        	return isValidDate(date,scanner);
+//            return false; // 형식이 올바르지 않으면 false 반환
+        }
+    }
 
     public void addExercise(Scanner scanner) {
         System.out.print("운동 이름을 입력하세요: ");
@@ -30,7 +53,9 @@ public class ExerciseManager {
 
         System.out.print("운동 날짜를 입력하세요 (YYYY-MM-DD): ");
         String date = scanner.nextLine();
-
+        
+        date = isValidDate(date, scanner);
+       
         for (Exercise exercise : exercises) {
             if (exercise.getName().equals(name) && exercise.getExerciseDate().equals(date)) {
                 System.out.println("같은 날짜에 같은 운동 이름이 이미 등록되어 있습니다. 변경이 필요하다면 수정해주세요.");
@@ -56,6 +81,7 @@ public class ExerciseManager {
     public void listExercisesByDate(Scanner scanner) {
         System.out.print("운동 날짜를 입력하세요 (YYYY-MM-DD): ");
         String date = scanner.nextLine();
+        date = isValidDate(date, scanner);
 
         boolean found = false;
         int totalTime = 0;
@@ -86,6 +112,7 @@ public class ExerciseManager {
 
         System.out.print("수정할 운동 날짜를 입력하세요 (YYYY-MM-DD): ");
         String date = scanner.nextLine();
+        date = isValidDate(date, scanner);
 
         for (Exercise exercise : exercises) {
             if (exercise.getName().equals(name) && exercise.getExerciseDate().equals(date)) {
@@ -112,6 +139,7 @@ public class ExerciseManager {
 
         System.out.print("삭제할 운동 날짜를 입력하세요 (YYYY-MM-DD): ");
         String date = scanner.nextLine();
+        date = isValidDate(date, scanner);
 
         Iterator<Exercise> iterator = exercises.iterator();
         while (iterator.hasNext()) {

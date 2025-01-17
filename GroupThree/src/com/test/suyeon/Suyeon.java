@@ -21,7 +21,7 @@ class Diary {
     private static final Map<Integer, String> WEATHER_EMOJIS = Map.of(
             1, "☀️",
             2, "🌥️",
-            3, "️️",
+            3, "️☁",
             4, "☔️",
             5, "☃️"
     );
@@ -86,7 +86,7 @@ class DiaryManagement {
         int weather = 0;
         while (true) {
             try {
-                System.out.print("오늘 날씨는 어땠나요? 1 ~ 5 중에서 입력해주세요! (1: ☀️, 2: 🌥️, 3: ️️, 4: ☔️, 5: ☃️) ");
+                System.out.print("오늘 날씨는 어땠나요? 1 ~ 5 중에서 입력해주세요! (1: ☀️, 2: 🌥️, 3: ️☁, 4: ☔️, 5: ☃️) ");
                 weather = Integer.parseInt(scanner.nextLine().trim());
                 if (weather < 1 || weather > 5) {
                     throw new IllegalArgumentException("1부터 5 사이의 숫자를 입력해주세요.");
@@ -162,7 +162,7 @@ class DiaryManagement {
         // 잘못된 입력에 대한 반복 처리
         while (true) {
             try {
-                System.out.print("검색할 날씨를 1 ~ 5 중에서 입력해주세요! (1: ☀️, 2: 🌥️, 3: ️️, 4: ☔️, 5: ☃️) ");
+                System.out.print("검색할 날씨를 1 ~ 5 중에서 입력해주세요! (1: ☀️, 2: 🌥️, 3: ️☁, 4: ☔️, 5: ☃️) ");
                 weather = Integer.parseInt(scanner.nextLine().trim());
                 if (weather < 1 || weather > 5) {
                     throw new IllegalArgumentException("1부터 5 사이의 숫자를 입력해주세요.");
