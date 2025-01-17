@@ -1,4 +1,4 @@
-package javaPJ;
+package com.test.shy;
 
 import java.util.*;
 
@@ -40,7 +40,7 @@ public class ExerciseManager {
 
         Exercise exercise = new Exercise(name, exerciseTime, exerciseEnergy, date);
         exercises.add(exercise);
-        System.out.println("운동이 성공적으로 등록되었습니다: " + exercise);
+        System.out.println("운동이 성공적으로 등록되었습니다: " + exercise.toString());
     }
 
     public void listExercises() {
@@ -64,7 +64,7 @@ public class ExerciseManager {
         System.out.println("=== " + date + " 운동 요약 ===");
         for (Exercise exercise : exercises) {
             if (exercise.getExerciseDate().equals(date)) {
-                System.out.println(exercise);
+                System.out.println(exercise.toString());
                 totalTime += exercise.getExerciseTime();
                 toalEnergy += exercise.getExerciseEnergy();
                 found = true;
@@ -96,9 +96,9 @@ public class ExerciseManager {
                 int newEnergy = scanner.nextInt();
                 scanner.nextLine();
 
-                exercise.setExerciseTime(newEnergy);
+                exercise.setExerciseTime(newTime);
                 exercise.setExerciseEnergy(newEnergy);
-                System.out.println("운동 정보가 성공적으로 수정되었습니다: " + exercise);
+                System.out.println("운동 정보가 성공적으로 수정되었습니다: " + exercise.toString());
                 return;
             }
         }
