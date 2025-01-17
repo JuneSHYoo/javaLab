@@ -1,4 +1,4 @@
-package com.test.sanghoon;
+package com.test.sangHoon;
 
 import java.util.*;
 

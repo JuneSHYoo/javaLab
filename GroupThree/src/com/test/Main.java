@@ -1,4 +1,5 @@
 package com.test;
+
 import java.util.Scanner;
 
 import com.test.dabin.Dabin;
@@ -65,13 +66,13 @@ public class Main {
 					hanjin.tamagotchiApp(scanner);
 					break;
 				case 4:
-					//fiveSun.mostViewedBooks(scanner);
+					fiveSun.start(scanner);
 					break;
 				case 5:
 					hyungSuh.start(scanner);
 					break;
 				case 6:
-					//shy.mostViewedBooks(scanner);
+					shy.printExerciseMenu(scanner);
 					break;
 				case 7:
 					//yeongSeo.mostViewedBooks(scanner);
