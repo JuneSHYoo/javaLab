@@ -59,6 +59,38 @@ public class YeongSeo {
         productViews.put("클린잇제로 오리지널 플렌징밤", 0);
     }
 
+    public void start(Scanner scanner) {
+        while (true) {
+            printMenu();
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (choice) {
+                case 1:
+                    addCosmetic(scanner);
+                    break;
+                case 2:
+                    listCosmetics();
+                    break;
+                case 3:
+                    searchCosmetics(scanner);
+                    break;
+                case 4:
+                    deleteCosmetic(scanner);
+                    break;
+                case 5:
+                    randomRecommendation();
+                    break;
+                case 6:
+                    System.out.println("\n🚪 프로그램을 종료합니다. 이용해주셔서 감사합니다! 👍");
+                    return;
+                default:
+                    System.out.println("❌ 잘못된 입력입니다. 다시 선호하세요.");
+            }
+        }
+    }
+    
+    // 1.화장품 등록 
     public void addCosmetic(Scanner scanner) {
         System.out.println("\n[📌 화장품 등록]");
         System.out.print("제품명: ");
@@ -80,6 +112,7 @@ public class YeongSeo {
         System.out.println("✅ 등록 완료: " + cosmetic);
     }
 
+    // 2. 전체 화장품 조회
     public void listCosmetics() {
         System.out.println("\n📋 [전체 화장품 목록]");
         if (cosmetics.isEmpty()) {
@@ -97,6 +130,7 @@ public class YeongSeo {
         }
     }
 
+    // 3. 화장품 검색
     public void searchCosmetics(Scanner scanner) {
         System.out.println("\n🔍 [화장품 검색]");
         System.out.println("1. 제품명/브랜드명으로 검색");
@@ -198,40 +232,7 @@ public class YeongSeo {
         System.out.println("🎉 오늘의 추천 화장품: " + randomCosmetic);
     }
 
-    public static void main(String[] args) {
-        YeongSeo yeongSeo = new YeongSeo();
-        Scanner scanner = new Scanner(System.in);
-
-        while (true) {
-            printMenu();
-            int choice = scanner.nextInt();
-            scanner.nextLine();
-
-            switch (choice) {
-                case 1:
-                    yeongSeo.addCosmetic(scanner);
-                    break;
-                case 2:
-                    yeongSeo.listCosmetics();
-                    break;
-                case 3:
-                    yeongSeo.searchCosmetics(scanner);
-                    break;
-                case 4:
-                    yeongSeo.deleteCosmetic(scanner);
-                    break;
-                case 5:
-                    yeongSeo.randomRecommendation();
-                    break;
-                case 6:
-                    System.out.println("\n🚪 프로그램을 종료합니다. 이용해주셔서 감사합니다! 👍");
-                    scanner.close();
-                    return;
-                default:
-                    System.out.println("❌ 잘못된 입력입니다. 다시 선택하세요.");
-            }
-        }
-    }
+    
 
     static class Cosmetic {
         private String name;
