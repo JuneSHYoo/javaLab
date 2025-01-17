@@ -14,7 +14,7 @@
    cd <jar 파일 위치>
    java -jar JAVA_Group3.jar
 
-### 팀원 목록
+### 참여자 목록
 - **신예빈** - 2048
 - **심수연** - Diary
 - **양한진** - Tamagotchi
