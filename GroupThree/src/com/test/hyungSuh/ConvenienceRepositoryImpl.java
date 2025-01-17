@@ -1,6 +1,7 @@
 package com.test.hyungSuh;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class ConvenienceRepositoryImpl implements ConvenienceRepository {
 
