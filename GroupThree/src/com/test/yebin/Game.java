@@ -90,6 +90,7 @@ public class Game {
 
 
     public static void gameStart() {
+        score = 0;
         for (int row = 0; row < 4; row++) {
             for (int col = 0; col < 4; col++) {
                 board[row][col] = 0;
