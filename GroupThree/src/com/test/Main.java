@@ -28,7 +28,7 @@ public class Main {
 		System.out.println("8. 윤다인 - ");
 		System.out.println("9. 이다빈 - Twins 선수 관리");
 		System.out.println("10. 이상훈 - Movie");
-		System.out.println("11. 현민영 - ");
+		System.out.println("11. 현민영 - 끝말잇기 게임");
 		System.out.println("12. 종료");
 		System.out.println("=======================> 숫자를 입력해주세요 : ");
 	}
@@ -45,7 +45,7 @@ public class Main {
 		Dain dain = new Dain();
 		Dabin dabin = new Dabin(); //Baseball
 		SangHoon sangHoon = new SangHoon(); //Movie
-		Minyeong minyeong = new Minyeong();
+		Minyeong minyeong = new Minyeong(); // 끝말잇기
 		
 		Scanner scanner = new Scanner(System.in);
 		int choice = 0;
@@ -87,7 +87,7 @@ public class Main {
 			        sangHoon.movieManagerApp(scanner);
 					break;
 				case 11:
-					//minyeong.mostViewedBooks(scanner);
+					minyeong.start();
 					break;
 				case 12:
 					System.out.println("프로그램을 종료합니다.");
