@@ -1,10 +1,17 @@
 # LG CNS AM CAMP 1기 - JAVA 프로젝트 (3조)
-**기간**: 2025.01.16 ~ 2025.01.17 1:00PM
 
-### 실행 방법
-1. [jar 파일 다운로드](https://github.com/lg-cns-am-1-group3/javaLab/releases/tag/JAVA_Group3)
-2. cmd 에서 cd jar 설치위치로 이동
-3. java -jar JAVA_Group3.jar로 실행
+### 기간:
+2025.01.16 ~ 2025.01.17 1:00PM
+
+---
+
+## 실행 방법
+
+1. **jar 파일 다운로드**
+2. **cmd에서 실행**
+   ```bash
+   cd <jar 파일 위치>
+   java -jar JAVA_Group3.jar
 
 ### 팀원 목록
 - **신예빈** - 2048
@@ -14,7 +21,7 @@
 - **오형서** - Convenience
 - **유승희** - GymLog
 - **유영서** - Cosmetic
-- **윤다인** - 
+- **윤다인** - (미제공)
 - **이다빈** - Baseball
 - **이상훈** - Movie
 - **현민영** - 끝말잇기 게임
