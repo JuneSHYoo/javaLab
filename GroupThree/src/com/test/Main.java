@@ -87,7 +87,7 @@ public class Main {
 			        sangHoon.movieManagerApp(scanner);
 					break;
 				case 11:
-					minyeong.start();
+					minyeong.start(scanner);
 					break;
 				case 12:
 					System.out.println("프로그램을 종료합니다.");

@@ -3,8 +3,7 @@ package com.test.minyeong;
 import java.util.Scanner;
 
 public class Minyeong {
-    public void start() {
-        Scanner scanner = new Scanner(System.in);
+    public void start(Scanner scanner) {
         WordChainGame game = new WordChainGame(scanner);
 
         while (true) {
