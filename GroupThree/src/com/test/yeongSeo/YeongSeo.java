@@ -151,6 +151,7 @@ public class YeongSeo {
         }
     }
 
+    // 3. 화장품 검색 - 제품명/브랜드명 검색 
     private void searchByKeyword(Scanner scanner) {
         System.out.print("검색어를 입력하세요 (제품명/브랜드명): ");
         String keyword = scanner.nextLine().trim().toLowerCase();
@@ -177,6 +178,7 @@ public class YeongSeo {
         }
     }
 
+    // 3. 화장품 검색 - 카테고리별
     private void searchByCategory(Scanner scanner) {
         System.out.print("검색할 카테고리를 입력하세요 (스킨케어/메이크업 - 베이스/메이크업 - 립/클렌징 등): ");
         String category = scanner.nextLine().trim();
@@ -201,6 +203,7 @@ public class YeongSeo {
         }
     }
 
+    // 4.  화장품 삭제
     public void deleteCosmetic(Scanner scanner) {
         System.out.println("\n[🗑️ 화장품 삭제]");
         System.out.print("삭제할 제품명을 입력하세요: ");
@@ -220,6 +223,7 @@ public class YeongSeo {
         System.out.printf("❌ '%s'와 일치하는 화장품이 없습니다.\n", name);
     }
 
+    // 5. 랜덤 화장품 추천
     public void randomRecommendation() {
         System.out.println("\n[🎁 랜덤 추천]");
         if (cosmetics.isEmpty()) {
