@@ -1,3 +1,4 @@
+package com.test.dabin;
 import lombok.AllArgsConstructor;
 
 import lombok.Getter;
