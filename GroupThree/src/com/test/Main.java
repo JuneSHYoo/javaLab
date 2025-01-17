@@ -1,4 +1,5 @@
 package com.test;
+
 import java.util.Scanner;
 
 import com.test.dabin.Dabin;
@@ -68,7 +69,7 @@ public class Main {
 					hanjin.mostViewedBooks(scanner);
 					break;
 				case 4:
-					fiveSun.mostViewedBooks(scanner);
+					fiveSun.start(scanner);
 					break;
 				case 5:
 					hyungSuh.mostViewedBooks(scanner);
