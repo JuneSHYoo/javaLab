@@ -1,12 +1,13 @@
 package com.test.hanjin;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Hanjin {
 		
     public void tamagotchiApp(Scanner scanner) {
-        ArrayList<Tamagotchi> tamagotchis = new ArrayList<>();
+    	List<Tamagotchi> tamagotchis = new ArrayList<>();
         
         try {
         	while (true) {
@@ -33,7 +34,7 @@ public class Hanjin {
                         MenuManager.sleepTamagotchi(scanner, tamagotchis);
                         break;
                     case 7:
-                        MenuManager.timePassesTamagotchi(scanner, tamagotchis);
+                        MenuManager.timePassesTamagotchi(tamagotchis);
                         break;
                     case 8:
                         MenuManager.deleteTamagotchi(scanner, tamagotchis);
@@ -46,12 +47,11 @@ public class Hanjin {
                 }
             }
         	
-        } catch(Exception e){
-			e.printStackTrace();
-			
-		} finally {
-			//scanner.close();
-		}
+        } catch (Exception e) {
+           
+        	System.out.println("오류가 발생했습니다. 다시 시도해주세요.");
+            e.printStackTrace();
+        } 
         
     
     }
