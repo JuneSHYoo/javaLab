@@ -2,7 +2,9 @@
 **기간**: 2025.01.16 ~ 2025.01.17 1:00PM
 
 ### 실행 방법
-(완성 후 JAR 파일 release에 배포한 다음 작성 예정.)
+1. [jar 파일 다운로드](https://github.com/lg-cns-am-1-group3/javaLab/releases/tag/JAVA_Group3)
+2. cmd 에서 cd jar 설치위치로 이동
+3. java -jar JAVA_Group3.jar로 실행
 
 ### 팀원 목록
 - **신예빈** - 2048
