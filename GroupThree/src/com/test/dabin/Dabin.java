@@ -1,7 +1,5 @@
 package com.test.dabin;
 
-import java.util.Scanner;
-
 public class Dabin {
     public static void printMenu() {
         System.out.println("\n ⚾️🏟️선수 관리 프로그램 🏟️⚾️ ");
