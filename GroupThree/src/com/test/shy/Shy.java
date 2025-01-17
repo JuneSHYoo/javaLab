@@ -1,6 +1,5 @@
 package com.test.shy;
 
-package javaPJ;
 import java.util.*;
 
 public class Shy {
