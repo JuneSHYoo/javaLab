@@ -1,3 +1,5 @@
+package com.test.yebin;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
