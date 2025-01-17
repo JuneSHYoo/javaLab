@@ -13,7 +13,8 @@ public class Exercise {
     
     @Override
     public String toString() {
-    	return "[ 운동 종목: " + name + " 운동 시간: " + exerciseTime + " 운동 소모 칼로리: " + exerciseEnergy 
-    			+ " 운동 일자: " + exerciseDate + " ]";
+    	return "[ 운동 일자: " + exerciseDate + ", 운동 종목: " + name + ", 운동 시간: " + exerciseTime + 
+    			", 운동 소모 칼로리: " + exerciseEnergy 
+    			+  " ]";
     }
 }
