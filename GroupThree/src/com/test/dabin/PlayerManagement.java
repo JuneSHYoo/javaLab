@@ -65,8 +65,13 @@ public class PlayerManagement {
             System.out.println("등록된 선수가 없습니다.");
             return;
         }
-        players.values().forEach(System.out::println);
-
+        System.out.println("--------------------------------------------------");
+        System.out.println("**현재 저장되어 있는 ⚾️LG TWINS ⚾선수 목록입니다.**");
+        players.values().forEach(player -> System.out.printf(
+                "이름: %s | 팀: %s | 포지션: %s | 등번호: %d\n",
+                player.getName(), player.getTeam(), player.getPosition(), player.getNumber()
+        ));
+        System.out.println("--------------------------------------------------");
     }
 
 
@@ -77,9 +82,12 @@ public class PlayerManagement {
         String keyword = scanner.nextLine().trim();
         boolean found=false;
 
+        System.out.println("--------------------------------------------------");
+        System.out.println("**⚾검색 결과 ⚾**");
         for (Player player :players.values()) {
             if(player.getName().contains(keyword)) {
-                System.out.println(player);
+                System.out.printf("이름: %s | 팀: %s | 포지션: %s | 등번호: %d\n",
+                        player.getName(), player.getTeam(), player.getPosition(), player.getNumber());
                 found=true;
             }
         }
@@ -88,6 +96,7 @@ public class PlayerManagement {
             System.out.printf("'%s'와 일치하는 선수를 찾을 수 없습니다.\n", keyword);
 
         }
+        System.out.println("--------------------------------------------------");
 
     }
 

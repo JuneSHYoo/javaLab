@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Dabin {
     public static void printMenu() {
-        System.out.println("\n선수 관리 ");
+        System.out.println("\n ⚾️🏟️선수 관리 프로그램 🏟️⚾️ ");
         System.out.println("\n현재 선수 목록에는 LG트윈스 일부 선수만 저장되어 있습니다. ");
         System.out.println("1. 선수 등록");
         System.out.println("2. 전체 선수 출력");

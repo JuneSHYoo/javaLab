@@ -26,7 +26,7 @@ public class Main {
 		System.out.println("6. 유승희 - GymLog");
 		System.out.println("7. 유영서 - Cosmetic");
 		System.out.println("8. 윤다인 - ");
-		System.out.println("9. 이다빈 - Baseball");
+		System.out.println("9. 이다빈 - Twins 선수 관리");
 		System.out.println("10. 이상훈 - Movie");
 		System.out.println("11. 현민영 - ");
 		System.out.println("12. 종료");
